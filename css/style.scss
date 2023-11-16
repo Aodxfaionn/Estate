@@ -1,0 +1,324 @@
+@mixin flex($gap: 0px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $gap;
+}
+
+@mixin flex-col($gap: 0px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap;
+}
+
+@mixin text-property {
+    font-kerning: none;
+    font-variant-numeric: stacked-fractions ordinal;
+    font-feature-settings:
+        "dlig" on,
+        "liga" off;
+}
+
+$dark-bg: #090e17;
+$light: #e6e6e6;
+$lilac: #858ab5;
+$blue: #151e2d;
+$brown: #805140;
+$dark-line: #232323;
+
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-Regular.woff2") format("woff2") url("./fonts/Inter-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-Light.woff2") format("woff2") url("./fonts/Inter-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('./fonts/Inter-ExtraLight.woff2') format('woff2') url('./fonts/Inter-ExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+    font-family: "Mirra Auriolic", sans-serif;
+    src: url("./fonts/mirra.otf") format("otf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poiret One", sans-serif;
+    src: url("./fonts/PoiretOne-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: $dark-bg;
+    background-repeat: no-repeat;
+    color: $light;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    position: relative;
+    color: $light;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: $blue;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.header,
+.main,
+.footer {
+    position: relative;
+    max-width: 1922px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    max-width: 1489px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header .container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 67px;
+    @include flex;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.color {
+    position: absolute;
+    height: 895px;
+    width: 100%;
+    background: linear-gradient(201deg, #f8956a 33%, rgba(255, 102, 36, 0) 71%);
+    mix-blend-mode: overlay;
+}
+
+.main {
+    background:
+        linear-gradient(250deg, rgba(9, 14, 23, 0) 0, #090e17 150%),
+        url("./img/main.jpg"),
+        lightgray 0px 0px / 100% 100% no-repeat;
+}
+.mainScreen {
+    height: 895px;
+    position: relative;
+    z-index: 1;
+    &__desc {
+        position: absolute;
+        top: 35%;
+        width: 22.6%;
+        padding-left: 35px;
+        border-left: 2px solid $light;
+    }
+    &__text {
+        position: absolute;
+        bottom: 0;
+        @include text-property;
+    }
+    &__title {
+        font-family: "Mirra Auriolic", sans-serif;
+        font-size: 198.5px;
+        font-weight: 400;
+        line-height: 126.6px;
+        letter-spacing: -10px;
+        &-letter {
+            position: relative;
+            display: inline-block;
+            margin: 0 85px;
+        }
+    }
+}
+
+.circle {
+    position: absolute;
+    bottom: 0;
+    font-size: 28px;
+    font-family: "Poiret One", sans-serif;
+    letter-spacing: 0;
+    line-height: 80px;
+    &-top {
+    }
+    &-bottom {
+        transform: scale(-1, -1);
+    }
+}
+
+.title {
+    text-align: center;
+    @include text-property;
+    font-family: "Mirra Auriolic", sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 96%;
+    letter-spacing: -4.5px;
+}
+
+.form {
+    padding: 150px 0 265px;
+    & .container {
+        height: 80px;
+        @include flex;
+        flex-wrap: nowrap;
+        background-color: $blue;
+    }
+    & form {
+        width: 76%;
+        height: 80px;
+        @include flex;
+        flex-wrap: nowrap;
+    }
+    &__title {
+        width: 355px;
+        height: 100%;
+        @include flex;
+        justify-content: center;
+        color: $lilac;
+        @include text-property;
+        font-family: "Mirra Auriolic", sans-serif;
+        font-size: 66px;
+        font-weight: 400;
+        line-height: 90px;
+        letter-spacing: -3.3px;
+    }
+    .btn {
+        width: 30%;
+    }
+    &__input {
+        width: 36%;
+        height: 100%;
+        -webkit-appearance: none;
+        padding-left: 37px;
+        background-color: $blue;
+        outline: 0;
+        border: 0;
+        border-left: 1px solid #4a4e73;
+        color: $lilac;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        line-height: 140%;
+        transition: 0.5s;
+        &:focus {
+            color: $light;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            line-height: 140%;
+            &::placeholder {
+                color: $light;
+            }
+        }
+        &::placeholder {
+            color: $lilac;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            line-height: 140%;
+            transition: 0.5s;
+        }
+        &::-webkit-input-placeholder {
+            color: $lilac;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            line-height: 140%;
+        }
+        &::-moz-placeholder {
+            color: $lilac;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            line-height: 140%;
+        }
+        &::-ms-input-placeholder {
+            color: $lilac;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            line-height: 140%;
+        }
+        .input:-webkit-autofill,
+        .input:-webkit-autofill:hover,
+        .input:-webkit-autofill:focus {
+            -webkit-text-fill-color: $lilac;
+            -webkit-box-shadow: 0 0 0px 40rem $blue inset;
+        }
+    }
+}
+
+.btn {
+    height: 100%;
+    width: 357px;
+    border: 0;
+    outline: 0;
+    background-color: #c96845;
+    color: $light;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        background-color: $brown;
+    }
+}
+
+.dignity {
+    @include flex(30px);
+    &__item {
+        width: 20%;
+        @include text-property();
+        font-family: "Poiret One", sans-serif;
+        font-size: 65px;
+        line-height: 77px;
+        letter-spacing: -3.25px;
+        &-color {
+            color: $lilac;
+            font-family: "Inter", sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 80%;
+            letter-spacing: -1.2px;
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+}

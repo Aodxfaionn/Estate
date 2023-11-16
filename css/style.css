@@ -1,0 +1,320 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.woff2") format("woff2") url("./fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Light.woff2") format("woff2") url("./fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-ExtraLight.woff2") format("woff2") url("./fonts/Inter-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mirra Auriolic", sans-serif;
+  src: url("./fonts/mirra.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poiret One", sans-serif;
+  src: url("./fonts/PoiretOne-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #090e17;
+  background-repeat: no-repeat;
+  color: #e6e6e6;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  position: relative;
+  color: #e6e6e6;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #151e2d;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+.header,
+.main,
+.footer {
+  position: relative;
+  max-width: 1922px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  max-width: 1489px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header .container {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.color {
+  position: absolute;
+  height: 895px;
+  width: 100%;
+  background: linear-gradient(201deg, #f8956a 33%, rgba(255, 102, 36, 0) 71%);
+  mix-blend-mode: overlay;
+}
+
+.main {
+  background: linear-gradient(250deg, rgba(9, 14, 23, 0) 0, #090e17 150%), url("./img/main.jpg"), lightgray 0px 0px/100% 100% no-repeat;
+}
+
+.mainScreen {
+  height: 895px;
+  position: relative;
+  z-index: 1;
+}
+.mainScreen__desc {
+  position: absolute;
+  top: 35%;
+  width: 22.6%;
+  padding-left: 35px;
+  border-left: 2px solid #e6e6e6;
+}
+.mainScreen__text {
+  position: absolute;
+  bottom: 0;
+  font-kerning: none;
+  font-variant-numeric: stacked-fractions ordinal;
+  font-feature-settings: "dlig" on, "liga" off;
+}
+.mainScreen__title {
+  font-family: "Mirra Auriolic", sans-serif;
+  font-size: 198.5px;
+  font-weight: 400;
+  line-height: 126.6px;
+  letter-spacing: -10px;
+}
+.mainScreen__title-letter {
+  position: relative;
+  display: inline-block;
+  margin: 0 85px;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0;
+  font-size: 28px;
+  font-family: "Poiret One", sans-serif;
+  letter-spacing: 0;
+  line-height: 80px;
+}
+.circle-bottom {
+  transform: scale(-1, -1);
+}
+
+.title {
+  text-align: center;
+  font-kerning: none;
+  font-variant-numeric: stacked-fractions ordinal;
+  font-feature-settings: "dlig" on, "liga" off;
+  font-family: "Mirra Auriolic", sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 96%;
+  letter-spacing: -4.5px;
+}
+
+.form {
+  padding: 150px 0 265px;
+}
+.form .container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  flex-wrap: nowrap;
+  background-color: #151e2d;
+}
+.form form {
+  width: 76%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  flex-wrap: nowrap;
+}
+.form__title {
+  width: 355px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: center;
+  color: #858ab5;
+  font-kerning: none;
+  font-variant-numeric: stacked-fractions ordinal;
+  font-feature-settings: "dlig" on, "liga" off;
+  font-family: "Mirra Auriolic", sans-serif;
+  font-size: 66px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: -3.3px;
+}
+.form .btn {
+  width: 30%;
+}
+.form__input {
+  width: 36%;
+  height: 100%;
+  -webkit-appearance: none;
+  padding-left: 37px;
+  background-color: #151e2d;
+  outline: 0;
+  border: 0;
+  border-left: 1px solid #4a4e73;
+  color: #858ab5;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  transition: 0.5s;
+}
+.form__input:focus {
+  color: #e6e6e6;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+}
+.form__input:focus::-moz-placeholder {
+  color: #e6e6e6;
+}
+.form__input:focus::placeholder {
+  color: #e6e6e6;
+}
+.form__input::-moz-placeholder {
+  color: #858ab5;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+.form__input::placeholder {
+  color: #858ab5;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  transition: 0.5s;
+}
+.form__input::-webkit-input-placeholder {
+  color: #858ab5;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+}
+.form__input::-moz-placeholder {
+  color: #858ab5;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+}
+.form__input::-ms-input-placeholder {
+  color: #858ab5;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+}
+.form__input .input:-webkit-autofill,
+.form__input .input:-webkit-autofill:hover,
+.form__input .input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #858ab5;
+  -webkit-box-shadow: 0 0 0px 40rem #151e2d inset;
+}
+
+.btn {
+  height: 100%;
+  width: 357px;
+  border: 0;
+  outline: 0;
+  background-color: #c96845;
+  color: #e6e6e6;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #805140;
+}
+
+.dignity {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.dignity__item {
+  width: 20%;
+  font-kerning: none;
+  font-variant-numeric: stacked-fractions ordinal;
+  font-feature-settings: "dlig" on, "liga" off;
+  font-family: "Poiret One", sans-serif;
+  font-size: 65px;
+  line-height: 77px;
+  letter-spacing: -3.25px;
+}
+.dignity__item-color {
+  color: #858ab5;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 80%;
+  letter-spacing: -1.2px;
+}/*# sourceMappingURL=style.css.map */
