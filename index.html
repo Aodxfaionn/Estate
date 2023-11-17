@@ -20,7 +20,56 @@
   <body>
     <header class="header">
       <div class="container">
+        <div class="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
         <a href="tel:+79194841786" class="header__tel">+7 919 48 41 786</a>
+      </div>
+      <div class="submenu">
+        <div class="container">
+          <nav class="submenu__menu menu">
+            <ul class="menuList">
+              <li class="menuList__item">
+                <a href="#house">Основной дом</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#spa">Спа-комплекс</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#nature">Природа</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#guestHouse">Гостевой дом</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#land">Територия</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#where">Расположение</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="submenu__letter">
+            <span class="submenu__letter-size">Е</span>
+            <div class="circle circle-header">
+              <div class="circle-top">Private lounge space</div>
+              <div class="circle-bottom">Private lounge space</div>
+            </div>
+          </div>
+          <div class="submenu__text">
+            <div class="submenu__contacts">
+              <a href="tel:+79194841786" class="header__tel"
+                >+7 919 48 41 786</a
+              >
+              <a href="mailto:EstateinKarelia@gmail.com"
+                >EstateinKarelia@gmail.com</a
+              >
+            </div>
+            <p class="submenu__title">estate in Karelia</p>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -37,12 +86,8 @@
               <div class="mainScreen__title-letter">
                 в
                 <div class="circle circle-main">
-                  <div id="circle-top" class="circle-top">
-                    Private lounge space
-                  </div>
-                  <div id="circle-bottom" class="circle-bottom">
-                    Private lounge space
-                  </div>
+                  <div class="circle-top">Private lounge space</div>
+                  <div class="circle-bottom">Private lounge space</div>
                 </div>
               </div>
               Карелии
@@ -73,6 +118,8 @@
         </div>
       </section>
       <section class="foryou">
+        <div class="tree tree-main"></div>
+        <div class="tree tree-copy"></div>
         <div class="container">
           <ul class="dignity">
             <li class="dignity__item">
@@ -96,11 +143,92 @@
               <p class="dignity__item-color">Spa house</p>
             </li>
           </ul>
-          <h2 class="title title-big">В вашем распоряжении</h2>
+          <h2 class="title foryou__title">В вашем распоряжении</h2>
+          <div class="circle circle-foryou">
+            <div class="circle-top">Private lounge space</div>
+            <div class="circle-bottom">Private lounge space</div>
+          </div>
         </div>
       </section>
+      <section class="reels"></section>
+      <section id="house" class="house"></section>
+      <section id="spa" class="spa"></section>
+      <section id="nature" class="nature"></section>
+      <section id="guestHouse" class="guestHouse"></section>
+      <section id="land" class="land"></section>
+      <section id="where" class="where"></section>
+      <section class="formBottom">
+        <form action="" class="formBottom__form getAnswer">
+          <h2 class="getAnswer__title">
+            Приватная усадьба в Карелии к Вашим услугам
+          </h2>
+          <p class="getAnswer__desc">
+            Мы доступны 24/7 и готовы ответить на интересующие Вас вопросы
+          </p>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="getAnswer__input"
+            placeholder="Ваше имя"
+          />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            class="getAnswer__input"
+            placeholder="Телефон"
+          />
+          <p class="getAnswer__policy">
+            Нажимая на кнопку вы соглашаетесь с политикой обработки данных
+          </p>
+          <button type="submit" class="btn getAnswer__btn">
+            Получить ответ
+          </button>
+        </form>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__left">
+          <p class="footer__title">estate in Karelia</p>
+          <p class="footer__desc">
+            Приватность, природа и комфорт на высшем уровне
+          </p>
+        </div>
+        <div class="footer__middle">
+          <div class="submenu__contacts">
+            <a href="tel:+79194841786" class="header__tel">+7 919 48 41 786</a>
+            <a href="mailto:EstateinKarelia@gmail.com"
+              >EstateinKarelia@gmail.com</a
+            >
+          </div>
+          <p class="footer__year">2024</p>
+        </div>
+        <nav class="menu">
+          <ul class="menuList">
+            <li class="menuList__item">
+              <a href="#house">Основной дом</a>
+            </li>
+            <li class="menuList__item">
+              <a href="#spa">Спа-комплекс</a>
+            </li>
+            <li class="menuList__item">
+              <a href="#nature">Природа</a>
+            </li>
+            <li class="menuList__item">
+              <a href="#guestHouse">Гостевой дом</a>
+            </li>
+            <li class="menuList__item">
+              <a href="#land">Територия</a>
+            </li>
+            <li class="menuList__item">
+              <a href="#where">Расположение</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script src="./js/circletype.min.js"></script>
     <script src="./js/script.js"></script>
   </body>

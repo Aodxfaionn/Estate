@@ -1,2 +1,15 @@
-new CircleType(document.getElementById("circle-top")).radius(180);
-new CircleType(document.getElementById("circle-bottom")).radius(180);
+// круговой текст
+const circlesTop = document.querySelectorAll('.circle-top');
+const circlesBottom = document.querySelectorAll('.circle-bottom');
+
+for (circle of circlesTop) new CircleType(circle).radius(180);
+for (circle of circlesBottom) new CircleType(circle).radius(180);
+
+// Бургерное меню
+const burger = document.querySelector(".burger");
+menu = document.querySelector(".submenu");
+
+burger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  burger.classList.toggle("active");
+});
