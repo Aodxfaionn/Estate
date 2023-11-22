@@ -2,8 +2,12 @@
 const circlesTop = document.querySelectorAll('.circle-top');
 const circlesBottom = document.querySelectorAll('.circle-bottom');
 
-for (circle of circlesTop) new CircleType(circle).radius(180);
-for (circle of circlesBottom) new CircleType(circle).radius(180);
+for (circle of circlesTop) new CircleType(circle).radius(90);
+for (circle of circlesBottom) new CircleType(circle).radius(90);
+
+new CircleType(document.querySelector('.circle-header-top')).radius(160);
+new CircleType(document.querySelector('.circle-header-bottom')).radius(160);
+
 
 // Бургерное меню
 const burger = document.querySelector(".burger");
