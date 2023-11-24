@@ -304,6 +304,7 @@ a:hover::before {
     background: url(./img/master-circle.png) no-repeat;
   }
   &.circle-foryou {
+    z-index: 1;
     width: 400px;
     height: 400px;
     top: 300px;
@@ -355,7 +356,7 @@ a:hover::before {
 
 .color {
   position: absolute;
-  height: 895px;
+  height: 1500px;
   width: 100%;
   background: linear-gradient(201deg, #f8956a 33%, rgba(255, 102, 36, 0) 71%);
   mix-blend-mode: overlay;
@@ -689,7 +690,7 @@ a:hover::before {
   }
   &__aboutHouse {
     width: 50%;
-    @include flex-col(124px);
+    @include flex-col(120px);
     &-text {
       width: 55%;
     }

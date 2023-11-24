@@ -1,10 +1,12 @@
 // Бургерное меню
 const burger = document.querySelector(".burger");
-menu = document.querySelector(".submenu");
+(menu = document.querySelector(".submenu")),
+  (circleMenu = document.querySelector(".circle-header"));
 
 burger.addEventListener("click", () => {
   menu.classList.toggle("active");
   burger.classList.toggle("active");
+  circleMenu.classList.toggle("rotate");
 });
 
 // Якорные ссылки
@@ -25,6 +27,7 @@ $(".slider-reels").slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   arrows: true,
+  variableWidth: true,
   prevArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="reels-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
@@ -45,6 +48,7 @@ $(".slider-lake").slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
+  variableWidth: true,
   prevArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="lake-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
@@ -73,6 +77,7 @@ $(".slider-where").slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
+  variableWidth: true,
   prevArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="where-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
@@ -87,6 +92,7 @@ $(".slider-master").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
+  variableWidth: true,
   prevArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="master-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
@@ -111,6 +117,7 @@ $(".slider-spa").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
+  variableWidth: true,
   prevArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="spa-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
@@ -134,7 +141,6 @@ $(".slider-near").slick({
   slidesToScroll: 1,
   arrows: true,
   variableWidth: true,
-  adaptiveHeight: true,
   prevArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="near-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
@@ -154,6 +160,7 @@ $(".slider-guest-one").slick({
   slidesToScroll: 1,
   swipe: false,
   arrows: false,
+  variableWidth: true,
   asNavFor: ".slider-guest-all",
 });
 $(".slider-guest-all").slick({
@@ -168,4 +175,19 @@ $(".slider-guest-all").slick({
   nextArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="guest-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
   asNavFor: ".slider-guest-one",
+});
+
+// Вращение надписи при переключении слаййдов в блоке Reels
+const circleReels = document.querySelector(".circle-reels"),
+  arrowReels = document.querySelectorAll(".reels-arrow");
+
+console.log(arrowReels);
+
+arrowReels.forEach((arrow) => {
+  let deg = 0;
+  arrow.addEventListener("click", () => {
+    console.log(deg);
+    deg += 90;
+    circleReels.style.transform = `scale(0.5) rotate(${deg}deg)`;
+  });
 });
