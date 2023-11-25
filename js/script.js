@@ -29,9 +29,9 @@ $(".slider-reels").slick({
   arrows: true,
   variableWidth: true,
   prevArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="reels-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="reels-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="reels-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="reels-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
 });
 
 const allReels = $(".slider-reels").slick("getSlick").slideCount;
@@ -50,18 +50,19 @@ $(".slider-lake").slick({
   arrows: true,
   variableWidth: true,
   prevArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="lake-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="lake-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="lake-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
-  responsive: [
-    {
-      breakpoint: 1920,
-      settings: {
-        slidesToShow: 4,
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="lake-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          swipe: true,
+arrows: false
+        },
       },
-    },
-  ],
-});
+    ],
+  });
 
 const allLake = $(".slider-lake").slick("getSlick").slideCount;
 $(".slider-lake + .slider__num > .slider__num-all").text(`0 ${allLake}`);
@@ -79,9 +80,9 @@ $(".slider-where").slick({
   arrows: true,
   variableWidth: true,
   prevArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="where-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="where-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="where-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="where-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
 });
 
 $(".slider-master").slick({
@@ -94,9 +95,9 @@ $(".slider-master").slick({
   arrows: true,
   variableWidth: true,
   prevArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="master-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="master-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="master-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="master-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
 });
 
 const allMaster = $(".slider-master").slick("getSlick").slideCount;
@@ -119,9 +120,18 @@ $(".slider-spa").slick({
   arrows: true,
   variableWidth: true,
   prevArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="spa-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="spa-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="spa-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="spa-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          swipe: true,
+arrows: false
+        },
+      },
+    ],
 });
 
 const allSpa = $(".slider-spa").slick("getSlick").slideCount;
@@ -142,10 +152,19 @@ $(".slider-near").slick({
   arrows: true,
   variableWidth: true,
   prevArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="near-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="near-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="near-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
-});
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="near-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          swipe: true,
+arrows: false
+        },
+      },
+    ],
+  });
 
 const allNear = $(".slider-near").slick("getSlick").slideCount;
 $(".slider-near + .slider__num > .slider__num-all").text(`0 ${allNear}`);
@@ -164,30 +183,35 @@ $(".slider-guest-one").slick({
   asNavFor: ".slider-guest-all",
 });
 $(".slider-guest-all").slick({
-  // infinite: true,
   swipe: false,
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
   variableWidth: true,
   prevArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="guest-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="guest-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
-    '<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none" class="guest-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="guest-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
   asNavFor: ".slider-guest-one",
+  responsive: [
+    {
+      breakpoint: 1366,
+      settings: {
+        arrows: false,
+        swipe: true,
+      },
+    },
+  ],
 });
 
 // Вращение надписи при переключении слаййдов в блоке Reels
 const circleReels = document.querySelector(".circle-reels"),
   arrowReels = document.querySelectorAll(".reels-arrow");
 
-console.log(arrowReels);
-
 arrowReels.forEach((arrow) => {
   let deg = 0;
   arrow.addEventListener("click", () => {
-    console.log(deg);
     deg += 90;
-    circleReels.style.transform = `scale(0.5) rotate(${deg}deg)`;
+   circleReels.style.transform = `scale(0.5) rotate(${deg}deg)`;
   });
 });
