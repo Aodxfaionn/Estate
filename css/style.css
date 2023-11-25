@@ -2106,7 +2106,7 @@ a:hover::before {
     margin-bottom: 319px;
   }
   .slider-guest-one .slick-list {
-    width: 573px 
+    width: 573px;
   }
   .slider-guest-one .slick-slide img {
     width: 573px !important;
@@ -2128,7 +2128,7 @@ a:hover::before {
   }
   .slider-guest-all svg {
     left: -573px;
-        bottom: 54px;
+    bottom: 54px;
   }
   .slider-guest-all svg.slider__arrow-right {
     left: -59px;
@@ -2342,11 +2342,11 @@ a:hover::before {
   }
   .mainScreen__desc {
     position: absolute;
-    top: 450px;
+    top: 431px;
     width: 296.5px;
   }
   .mainScreen {
-    height: 895px;
+    height: 864px;
   }
   .mainScreen__title {
     width: 80%;
@@ -2361,7 +2361,7 @@ a:hover::before {
     left: -326px;
   }
   .form {
-    padding: 59px 0 228px;
+    padding: 59px 0 210px;
   }
   .form .container {
     width: 663px;
@@ -2407,7 +2407,7 @@ a:hover::before {
     width: 29%;
   }
   .title.foryou__title {
-    margin-top: 236px;
+    margin-top: 221px;
   }
   .tree {
     width: 100%;
@@ -2435,6 +2435,10 @@ a:hover::before {
   }
   .slider__num {
     margin-top: 4px;
+    right: 24px;
+  }
+  .reels .title {
+    margin-left: 26px;
   }
   .circle.circle-reels {
     left: 6px;
@@ -2447,7 +2451,7 @@ a:hover::before {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px;
   }
   .master__aboutHouse-text {
     width: 61%;
@@ -2459,6 +2463,9 @@ a:hover::before {
   }
   .master__floor > div {
     width: 50%;
+  }
+  .master__floor-list {
+    margin-top: 42px;
   }
   .master__top {
     margin-bottom: 101px;
@@ -2514,7 +2521,7 @@ a:hover::before {
   }
   .master__text-one {
     left: -488px;
-    top: -130px;
+    top: -111px;
   }
   .master__bottom {
     margin-bottom: 262px;
@@ -2534,8 +2541,9 @@ a:hover::before {
     gap: 22px;
   }
   .master__bottom .master__imgBlock:last-of-type {
-    bottom: 28px;
-    gap: 62px;
+    bottom: 30px;
+    left: -34px;
+    gap: 37px;
   }
   .master__bottom .master__imgBlock:last-of-type img {
     width: 435px;
@@ -2574,7 +2582,7 @@ a:hover::before {
     right: -12%;
   }
   .master {
-    margin-bottom: 412px;
+    margin-bottom: 428px;
   }
   .master__lastText .slider__num {
     position: absolute;
@@ -2745,14 +2753,14 @@ a:hover::before {
   }
   .guestHouse {
     height: 475px;
-    margin-bottom: 300px;
+    margin-bottom: 257px;
   }
   .guestHouse .container {
     flex-direction: column-reverse;
   }
   .guestHouse .title {
     width: 301px;
-}
+  }
   .guestHouse__left {
     flex-direction: row;
   }
@@ -2761,43 +2769,51 @@ a:hover::before {
   }
   .slider-guest-one .slick-slide img {
     width: 662.122px !important;
-height: 590.479px;
+    height: 590.479px;
   }
   .slider-guest-all .slick-slide img {
     width: 164.086px !important;
-height: 590.479px;
+    height: 590.479px;
   }
   .guestHouse__text-big {
     padding-bottom: 18px;
     font-size: 56px;
-line-height: 77%; 
-letter-spacing: -2.8px;
+    line-height: 77%;
+    letter-spacing: -2.8px;
   }
   .land__top-width {
-    width: 60%;
+    width: 206px;
     margin-top: 17px;
   }
   .land__left {
-    height: 980px;
+    height: 975px;
     left: 0;
-    top: 73px;
-    width: 47%;
+    top: 79px;
+    width: 360px;
   }
   .land__left-bottom {
     display: none;
   }
   .slider-where img {
     width: 435px !important;
-height: 555px;
+    height: 555px;
   }
   .where .title {
     margin-left: 0;
   }
   .land__bottom {
-    margin-top: 52px;
+    margin-top: 34px;
   }
   .where {
-    margin-top: -103px;
+    padding-top: 70px;
+  }
+  .where__map {
+    height: 803px;
+    object-fit: cover;
+  }
+  .where .list {
+    margin: 215px -21px 89px 0;
+    gap: 70px 14px;
   }
   .where .list__item {
     width: 47%;
@@ -2809,7 +2825,13 @@ height: 555px;
     padding: 0;
   }
   .getAnswer {
-    left: 21%;
+    left: 196px;
+  }
+  .getAnswer__desc {
+    margin: 18px 0;
+  }
+  .getAnswer__policy {
+    margin-top: 59px;
   }
   .footer .container {
     padding: 96px 40px;
@@ -2823,8 +2845,11 @@ height: 555px;
   }
   .footer__year {
     position: absolute;
-    right: 40px;
-    bottom: 110px;
+    right: 98px;
+    bottom: 91px;
+  }
+  .footer .menuList {
+    gap: 22.5px 11px;
   }
   .footer__desc {
     width: 208px;
