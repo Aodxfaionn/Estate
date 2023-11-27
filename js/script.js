@@ -36,6 +36,8 @@ $(".slider-reels").slick({
     {
       breakpoint: 768,
       settings: {
+        slidesToShow: 1,
+        touchThreshold: 10,
         swipe: true,
         arrows: false,
       },
@@ -66,6 +68,7 @@ $(".slider-lake").slick({
     {
       breakpoint: 1366,
       settings: {
+        touchThreshold: 10,
         swipe: true,
         arrows: false,
       },
