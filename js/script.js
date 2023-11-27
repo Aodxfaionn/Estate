@@ -32,16 +32,16 @@ $(".slider-reels").slick({
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="reels-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="reels-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          swipe: true,
-          arrows: false,
-        },
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        swipe: true,
+        arrows: false,
       },
-    ],
-  });
+    },
+  ],
+});
 
 const allReels = $(".slider-reels").slick("getSlick").slideCount;
 $(".slider-reels + .slider__num > .slider__num-all").text(`0 ${allReels}`);
@@ -62,16 +62,16 @@ $(".slider-lake").slick({
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="lake-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="lake-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
-    responsive: [
-      {
-        breakpoint: 1366,
-        settings: {
-          swipe: true,
-arrows: false
-        },
+  responsive: [
+    {
+      breakpoint: 1366,
+      settings: {
+        swipe: true,
+        arrows: false,
       },
-    ],
-  });
+    },
+  ],
+});
 
 const allLake = $(".slider-lake").slick("getSlick").slideCount;
 $(".slider-lake + .slider__num > .slider__num-all").text(`0 ${allLake}`);
@@ -92,6 +92,15 @@ $(".slider-where").slick({
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="where-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="where-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        swipe: true,
+        arrows: false,
+      },
+    },
+  ],
 });
 
 $(".slider-master").slick({
@@ -107,16 +116,16 @@ $(".slider-master").slick({
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="master-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="master-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          swipe: true,
-          arrows: false,
-        },
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        swipe: true,
+        arrows: false,
       },
-    ],
-  });
+    },
+  ],
+});
 
 const allMaster = $(".slider-master").slick("getSlick").slideCount;
 $(".slider-master + .master__lastText > .slider__num > .slider__num-all").text(
@@ -141,15 +150,15 @@ $(".slider-spa").slick({
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="spa-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="spa-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
-    responsive: [
-      {
-        breakpoint: 1366,
-        settings: {
-          swipe: true,
-arrows: false
-        },
+  responsive: [
+    {
+      breakpoint: 1366,
+      settings: {
+        swipe: true,
+        arrows: false,
       },
-    ],
+    },
+  ],
 });
 
 const allSpa = $(".slider-spa").slick("getSlick").slideCount;
@@ -173,16 +182,16 @@ $(".slider-near").slick({
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="near-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="near-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
-    responsive: [
-      {
-        breakpoint: 1366,
-        settings: {
-          swipe: true,
-arrows: false
-        },
+  responsive: [
+    {
+      breakpoint: 1366,
+      settings: {
+        swipe: true,
+        arrows: false,
       },
-    ],
-  });
+    },
+  ],
+});
 
 const allNear = $(".slider-near").slick("getSlick").slideCount;
 $(".slider-near + .slider__num > .slider__num-all").text(`0 ${allNear}`);
@@ -230,7 +239,7 @@ $(".slider-guest-all").slick({
   ],
 });
 
-// Вращение надписи при переключении слаййдов в блоке Reels
+// Вращение надписи при переключении слайдов в блоке Reels
 const circleReels = document.querySelector(".circle-reels"),
   arrowReels = document.querySelectorAll(".reels-arrow");
 
@@ -238,6 +247,6 @@ arrowReels.forEach((arrow) => {
   let deg = 0;
   arrow.addEventListener("click", () => {
     deg += 90;
-   circleReels.style.transform = `scale(0.5) rotate(${deg}deg)`;
+    circleReels.style.transform = `scale(0.5) rotate(${deg}deg)`;
   });
 });
