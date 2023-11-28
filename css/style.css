@@ -552,6 +552,7 @@ a:hover::before {
   background-color: #151e2d;
   outline: 0;
   border: 0;
+  border-radius: 0;
   border-left: 1px solid #4a4e73;
   color: #858ab5;
   font-family: "Inter", sans-serif;
@@ -1457,6 +1458,7 @@ a:hover::before {
   background-color: transparent;
   outline: 0;
   border: 0;
+  border-radius: 0;
   border-bottom: 1px solid rgba(230, 230, 230, 0.3);
   border-left: 1px solid rgba(230, 230, 230, 0.3);
   color: #e6e6e6;
@@ -3716,6 +3718,9 @@ a:hover::before {
   .spa-color {
     height: 430px;
   }
+  .slider-spa .slick-list {
+    left: -136px;
+}
 }
 
 @media (max-width: 600px) {
