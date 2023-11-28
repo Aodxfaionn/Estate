@@ -37,7 +37,7 @@ $(".slider-reels").slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        touchThreshold: 10,
+        touchThreshold: 15,
         swipe: true,
         arrows: false,
       },
@@ -68,7 +68,7 @@ $(".slider-lake").slick({
     {
       breakpoint: 1366,
       settings: {
-        touchThreshold: 10,
+        touchThreshold: 15,
         swipe: true,
         arrows: false,
       },
@@ -99,6 +99,7 @@ $(".slider-where").slick({
     {
       breakpoint: 768,
       settings: {
+        touchThreshold: 15,
         swipe: true,
         arrows: false,
       },
@@ -123,6 +124,7 @@ $(".slider-master").slick({
     {
       breakpoint: 768,
       settings: {
+        touchThreshold: 15,
         swipe: true,
         arrows: false,
       },
@@ -157,6 +159,7 @@ $(".slider-spa").slick({
     {
       breakpoint: 1366,
       settings: {
+        touchThreshold: 15,
         swipe: true,
         arrows: false,
       },
@@ -188,7 +191,9 @@ $(".slider-near").slick({
   responsive: [
     {
       breakpoint: 1366,
+      touchThreshold: 15,
       settings: {
+        touchThreshold: 15,
         swipe: true,
         arrows: false,
       },
@@ -215,6 +220,7 @@ $(".slider-guest-one").slick({
     {
       breakpoint: 1366,
       settings: {
+        touchThreshold: 15,
         swipe: true,
       },
     },
@@ -235,6 +241,7 @@ $(".slider-guest-all").slick({
     {
       breakpoint: 1366,
       settings: {
+        touchThreshold: 15,
         arrows: false,
         swipe: true,
       },
@@ -250,6 +257,8 @@ arrowReels.forEach((arrow) => {
   let deg = 0;
   arrow.addEventListener("click", () => {
     deg += 90;
-    circleReels.style.transform = `scale(0.5) rotate(${deg}deg)`;
+    if (window.innerWidth < 1920)
+      circleReels.style.transform = `scale(0.4) rotate(${deg}deg)`;
+    else circleReels.style.transform = `scale(0.5) rotate(${deg}deg)`;
   });
 });
