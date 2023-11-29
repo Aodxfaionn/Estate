@@ -3203,8 +3203,8 @@ a:hover::before {
     line-height: 77%;
     letter-spacing: -2.2px;
   }
-  .list__item-color {
-    width: 90%;
+  .list__item .st {
+    font-size: 50%;
   }
   .title.foryou__title {
     width: 100%;
@@ -3293,13 +3293,8 @@ a:hover::before {
   .master__floor-list li {
     width: 140px
   }
-  .master__floor__two ul {
-    margin: 17px 9px 0 0;
-    gap: 23px 28px;
-    justify-content: space-between;
-  }
-  .master__floor__two li {
-    width: 150px;
+  .master__floor__one .master__floor-list li:last-of-type {
+    width: 100px;
   }
   .master__floor__two li:last-of-type {
     width: 105px;
