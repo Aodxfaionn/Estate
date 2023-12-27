@@ -1,38 +1,688 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <title>Estate</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/mirra-auriolic"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/poiret-one" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css " />
+    <link rel="stylesheet" type="text/css" href="./css/style.css " />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-  <title>Estate</title>
-  <link href="https://fonts.cdnfonts.com/css/mirra-auriolic" rel="stylesheet" />
-  <link href="https://fonts.cdnfonts.com/css/poiret-one" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="./css/normalize.css " />
-  <link rel="stylesheet" type="text/css" href="./css/style.css " />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="burger">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </div>
-      <a href="tel:+79194841786" class="header__tel">+7 919 48 41 786</a>
-    </div>
-    <div class="submenu">
+  <body>
+    <header class="header">
       <div class="container">
-        <nav class="submenu__menu menu">
+        <div class="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
+        <a href="tel:+79194841786" class="header__tel">+7 919 48 41 786</a>
+      </div>
+      <div class="submenu">
+        <div class="container">
+          <nav class="submenu__menu menu">
+            <ul class="menuList">
+              <li class="menuList__item">
+                <a href="#master">Основной дом</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#spa">Спа-комплекс</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#nature">Природа</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#guestHouse">Гостевой дом</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#land">Територия</a>
+              </li>
+              <li class="menuList__item">
+                <a href="#where">Расположение</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="submenu__letter">
+            <span class="submenu__letter-size">Е</span>
+            <div class="circle circle-header"></div>
+          </div>
+          <div class="submenu__text">
+            <div class="submenu__contacts">
+              <a href="tel:+79194841786" class="header__tel"
+                >+7 919 48 41 786</a
+              >
+              <a href="mailto:EstateinKarelia@gmail.com"
+                >EstateinKarelia@gmail.com</a
+              >
+            </div>
+            <p class="submenu__title">estate in Karelia</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="color"></div>
+      <div class="effect"></div>
+      <section class="mainScreen">
+        <div class="container">
+          <p class="mainScreen__desc">
+            Уютная усадьба в атмосфере первозданной природы, укрытая природой от
+            окружения
+          </p>
+          <div class="mainScreen__text">
+            <h1 class="mainScreen__title">
+              Усадьба
+              <div class="mainScreen__title-letter">
+                в
+                <div class="circle circle-main"></div>
+              </div>
+              Карелии
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container">
+          <h3 class="form__title">Арендовать</h3>
+          <form action="" class="rent-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form__input"
+              placeholder="Ваше имя"
+            />
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              class="form__input"
+              placeholder="Телефон"
+            />
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section class="foryou">
+        <div class="tree tree-main"></div>
+        <div class="tree tree-copy"></div>
+        <div class="container">
+          <ul class="list">
+            <li class="list__item">
+              0,5 га
+              <p class="list__item-color">Площадь усадьбы</p>
+            </li>
+            <li class="list__item">
+              0,25 га
+              <p class="list__item-color">собственнй берег</p>
+            </li>
+            <li class="list__item">
+              200 м<sup class="st">2</sup>
+              <p class="list__item-color">Mastar House</p>
+            </li>
+            <li class="list__item">
+              150 м<sup class="st">2</sup>
+              <p class="list__item-color">Guest House</p>
+            </li>
+            <li class="list__item">
+              230 м<sup class="st">2</sup>
+              <p class="list__item-color">Spa house</p>
+            </li>
+          </ul>
+          <h2 class="title foryou__title">В вашем распоряжении</h2>
+          <div class="circle circle-foryou"></div>
+        </div>
+      </section>
+      <section class="reels">
+        <div class="effect-reels"></div>
+        <div class="container">
+          <h2 class="title">Reels</h2>
+          <div class="slider slider-reels">
+            <img src="./css/img/reels.jpg" alt="Reels" />
+            <img src="./css/img/reels.jpg" alt="Reels" />
+            <img src="./css/img/reels.jpg" alt="Reels" />
+            <img src="./css/img/reels.jpg" alt="Reels" />
+            <img src="./css/img/reels.jpg" alt="Reels" />
+            <img src="./css/img/reels.jpg" alt="Reels" />
+          </div>
+          <div class="slider__num">
+            <span class="slider__num-start">01</span> /
+            <span class="slider__num-all"></span>
+          </div>
+          <div class="circle circle-reels"></div>
+        </div>
+      </section>
+      <section id="master" class="master">
+        <div class="master__top container">
+          <div class="master__aboutHouse">
+            <h2 class="title">Master house</h2>
+            <p class="master__aboutHouse-text">
+              Основной дом из рубленного бревна (толстомер), площадью 200 м<sup
+                class="st"
+                >2</sup
+              >
+              с видовой террасой В доме реализован уникальный дизайн проект в
+              стиле фьюжн.
+            </p>
+          </div>
+          <div class="master__floor">
+            <div class="master__floor__one">
+              <h5 class="master__floor-title">1 этаж</h5>
+              <ul class="master__floor-list">
+                <li>Веранда</li>
+                <li>Прихожая</li>
+                <li>Гостиная-столовая</li>
+                <li>Кухня</li>
+                <li>Кабинет</li>
+                <li>Санузел душем</li>
+              </ul>
+            </div>
+            <div class="master__floor__two">
+              <h5 class="master__floor-title">2 этаж</h5>
+              <ul class="master__floor-list">
+                <li>Мастер спальня с душем</li>
+                <li>2 спальни с балконом</li>
+                <li>Санузел и постирочная</li>
+                <li>Видовая оранжерея</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="master__middle">
+          <img src="./css/img/master-one.jpg" alt="Master House" />
+          <div class="master__imgBlock">
+            <img src="./css/img/master-three.jpg" alt="Master House" />
+            <p>Премиальный камин Tulikivi.</p>
+            <div class="circle circle-master-bottom"></div>
+          </div>
+          <div class="master__square-brown">
+            <p class="master__square-letter">М</p>
+            <div class="circle circle-master"></div>
+          </div>
+          <img
+            src="./css/img/master-two.jpg"
+            alt="Master House"
+            class="master__middle-imgTop"
+          />
+        </div>
+        <div class="master__bottom">
+          <p class="master__text-one title-thebiggest">Master house</p>
+          <div class="container">
+            <div class="master__imgBlock">
+              <img src="./css/img/master-four.jpg" alt="Master house" />
+              <p>
+                Видовая оранжерея на стеклянном полу с сохранением эффекта
+                второго света
+              </p>
+            </div>
+            <div class="master__imgBlock">
+              <img src="./css/img/master-five.jpg" alt="Master house" />
+              <p>
+                Дом оснащен современной техникой и изысканной мебелью известных
+                брендов
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="master__slider">
+          <div class="container container-one">
+            <p class="master__text-two title-thebiggest">M</p>
+          </div>
+          <div class="slider slider-master">
+            <div class="master__sliderBlock">
+              <img src="./css/img/master-slider-one.jpg" alt="Master house" />
+              <p class="master__lastText-text">
+                уютная усадьба в атмосфере первозданной природы, укрытая
+                природой от окружения.
+              </p>
+            </div>
+            <div class="master__sliderBlock">
+              <img src="./css/img/master-slider-three.jpg" alt="Master house" />
+              <p class="master__lastText-text">
+                уютная усадьба в атмосфере первозданной природы, укрытая
+                природой от окружения.
+              </p>
+            </div>
+            <div class="master__sliderBlock">
+              <img src="./css/img/master-slider-two.jpg" alt="Master house" />
+              <p class="master__lastText-text">
+                уютная усадьба в атмосфере первозданной природы, укрытая
+                природой от окружения.
+              </p>
+            </div>
+            <div class="master__sliderBlock">
+              <img src="./css/img/master-slider-one.jpg" alt="Master house" />
+              <p class="master__lastText-text">
+                уютная усадьба в атмосфере первозданной природы, укрытая
+                природой от окружения.
+              </p>
+            </div>
+            <div class="master__sliderBlock">
+              <img src="./css/img/master-slider-three.jpg" alt="Master house" />
+              <p class="master__lastText-text">
+                уютная усадьба в атмосфере первозданной природы, укрытая
+                природой от окружения.
+              </p>
+            </div>
+            <div class="master__sliderBlock">
+              <img src="./css/img/master-slider-two.jpg" alt="Master house" />
+              <p class="master__lastText-text">
+                уютная усадьба в атмосфере первозданной природы, укрытая
+                природой от окружения.
+              </p>
+            </div>
+          </div>
+          <div class="container master__lastText">
+            <p class="master__lastText-orange">Private lounge space</p>
+            <div class="slider__num">
+              <span class="slider__num-start">01</span> /
+              <span class="slider__num-all"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="spa" class="spa">
+        <div class="spa-color"></div>
+        <div class="spa__tree"></div>
+        <div class="container">
+          <div class="spa__info spaInfo">
+            <h2 class="spaInfo__title">SPA HOUSE</h2>
+            <p class="spaInfo__desc">
+              Краткое описание спа комплекса. Особенное место сосредоточение
+              всего наилучшего
+            </p>
+            <div class="spaInfo__in inSpa">
+              <p class="inSpa__title">2 этажа элитного отдыха</p>
+              <ul class="inSpa__list">
+                <li>Круговая терасса</li>
+                <li>Джакузи с выходом к озеру</li>
+                <li>Баня на дровах</li>
+                <li>Соляная пещера</li>
+                <li>Мастер спальня</li>
+                <li>Библиотека</li>
+                <li>Бильярд</li>
+                <li>Хамам</li>
+              </ul>
+              <div class="circle circle-spa"></div>
+            </div>
+            <div class="spa__photo spaPhoto">
+              <p class="spaPhoto__big title-thebiggest">SPA HOUSE</p>
+              <div class="spaPhoto__imgBlock">
+                <img src="./css/img/spa-one.jpg" alt="Spa house" />
+                <p>Открытое джакузи</p>
+              </div>
+              <div class="spaPhoto__imgBlock">
+                <img src="./css/img/spa-two.jpg" alt="Spa house" />
+                <p>Описание душа</p>
+              </div>
+              <div class="spaPhoto__imgBlock">
+                <img src="./css/img/spa-three.jpg" alt="Spa house" />
+                <p>12 футовый элитный стол</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider slider-spa">
+            <div class="master__sliderBlock">
+              <img src="./css/img/spa-slider-one.jpg" alt="Spa house" />
+            </div>
+            <div class="master__sliderBlock">
+              <img src="./css/img/spa-slider-two.jpg" alt="Spa house" />
+            </div>
+            <div class="master__sliderBlock">
+              <img src="./css/img/spa-slider-three.jpg" alt="Spa house" />
+            </div>
+            <div class="master__sliderBlock">
+              <img src="./css/img/spa-slider-four.jpg" alt="Spa house" />
+            </div>
+          </div>
+          <div class="container master__lastText">
+            <p class="master__lastText-orange">Private lounge space</p>
+            <div class="slider__num">
+              <span class="slider__num-start">01</span> /
+              <span class="slider__num-all"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="nature" class="nature">
+        <div class="lake">
+          <img src="./css/img/lake.jpg" alt="Край озер" class="lake__img" />
+          <div class="container">
+            <h2 class="lake__title title-big">Край озер</h2>
+            <div class="lake__text">
+              <p class="lake__text-left">
+                Уникальный по своей природе, культуре и истории регион России,
+                который имеет самую протяженную границу с Европейским союзом, на
+                Северо-Востоке омывается Белым морем.
+              </p>
+              <p class="lake__text-right">
+                Славится красивой разнообразной природой. Это экологически
+                чистый край, покрытый хвойными лесами, озерами, реками и
+                скалами. Более 25 % территории занимает водная поверхность – в
+                республике насчитывается около 27 000 рек и около 60 000 озёр, в
+                том числе крупнейшие озёра Европы – Ладожское и Онежское
+              </p>
+            </div>
+            <div class="slider slider-lake">
+              <img src="./css/img/lake-one.jpg" alt="Край озер" />
+              <img src="./css/img/lake-two.jpg" alt="Край озер" />
+              <img src="./css/img/lake-three.jpg" alt="Край озер" />
+              <img src="./css/img/lake-four.jpg" alt="Край озер" />
+              <img src="./css/img/lake-five.jpg" alt="Край озер" />
+            </div>
+            <div class="slider__num">
+              <span class="slider__num-start">01</span> /
+              <span class="slider__num-all"></span>
+            </div>
+          </div>
+        </div>
+        <div class="near">
+          <div class="near-square"></div>
+          <div class="container">
+            <h2 class="near__top title-big">Рядом</h2>
+            <div class="near__middle slider slider-near">
+              <div>
+                <div class="slider-near__img">
+                  <img
+                    src="./css/img/near-one-one.jpg"
+                    alt="Территория дома"
+                  />
+                  <img
+                    src="./css/img/near-one-two.jpg"
+                    alt="Территория дома"
+                  />
+                </div>
+                <div class="slider-near__text">
+                  <h3 class="title">Заповедник КИВАЧ</h3>
+                  <p>
+                    Путешествие по живописным тропам заповедника погрузит вас в
+                    уникальный мир древних лесов, шепот водопадов и чистоту озер
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="slider-near__img">
+                  <img
+                    src="./css/img/near-two-one.jpg"
+                    alt="Территория дома"
+                  />
+                  <img
+                    src="./css/img/near-two-two.jpg"
+                    alt="Территория дома"
+                  />
+                </div>
+                <div class="slider-near__text">
+                  <h3 class="title">Валаам</h3>
+                  <p>
+                    Это не просто туристическое путешествие, это погружение в
+                    уникальный мир, где время замедляется, а каждый момент
+                    становится ценным
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="slider-near__img">
+                  <img
+                    src="./css/img/near-three-one.jpg"
+                    alt="Территория дома"
+                  />
+                  <img
+                    src="./css/img/near-three-two.jpg"
+                    alt="Территория дома"
+                  />
+                </div>
+                <div class="slider-near__text">
+                  <h3 class="title">Национальный<br />парк Паанаярви</h3>
+                  <p>
+                    Это не только заповедник биоразнообразия, но и исторический
+                    памятник, рассказывающий о тысячелетиях соседства человека и
+                    природы
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="slider-near__img">
+                  <img
+                    src="./css/img/near-four-one.jpg"
+                    alt="Территория дома"
+                  />
+                  <img
+                    src="./css/img/near-four-two.jpg"
+                    alt="Территория дома"
+                  />
+                </div>
+                <div class="slider-near__text">
+                  <h3 class="title">Резиденция<br />Деда Мороза</h3>
+                  <p>
+                    Это не просто место встречи с легендарным добрым
+                    волшебником, но и уникальная возможность погрузиться в
+                    сказочный мир волшебства и радости
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="slider-near__img">
+                  <img
+                    src="./css/img/near-five-one.jpg"
+                    alt="Территория дома"
+                  />
+                  <img
+                    src="./css/img/near-five-two.jpg"
+                    alt="Территория дома"
+                  />
+                </div>
+                <div class="slider-near__text">
+                  <h3 class="title">Парк Рускеала</h3>
+                  <p>
+                    Подарите себе невероятное путешествие в мир уникальных форм
+                    и цветов, дарованных природой Карелии
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__num">
+              <span class="slider__num-start">01</span> /
+              <span class="slider__num-all"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="guestHouse" class="guestHouse">
+        <div class="container">
+          <div class="guestHouse__left">
+            <h2 class="title">Guest house</h2>
+            <div class="guestHouse__text">
+              <p class="guestHouse__text-big">2а</p>
+              <p>
+                Комфортабельных номера со всеми удобствами и отдельными
+                санузлами
+              </p>
+            </div>
+          </div>
+
+          <div class="slidersContainer">
+            <div class="slider-guest-one">
+              <img src="./css/img/guest-one.jpg" alt="Гостевой дом" />
+              <img src="./css/img/guest-two.jpg" alt="Гостевой дом" />
+              <img src="./css/img/guest-three.jpg" alt="Гостевой дом" />
+              <img src="./css/img/guest-two.jpg" alt="Гостевой дом" />
+            </div>
+            <div class="guestHouse__right slider slider-guest-all">
+              <img src="./css/img/guest-two.jpg" alt="Гостевой дом" />
+              <img src="./css/img/guest-three.jpg" alt="Гостевой дом" />
+              <img src="./css/img/guest-two.jpg" alt="Гостевой дом" />
+              <img src="./css/img/guest-one.jpg" alt="Гостевой дом" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="land" class="land">
+        <div class="container">
+          <div class="land__top">
+            <h2 class="title">НА территории</h2>
+            <div class="land__top-width">
+              <div class="circle circle-land"></div>
+              <ul class="land__list">
+                <li>Гриль домик</li>
+                <li>Уличные тренажеры</li>
+                <li>Эллинг с видовой терассой</li>
+                <li>Гараж</li>
+              </ul>
+            </div>
+          </div>
+          <div class="land__bottom slider slider-where">
+            <img src="./css/img/land-one.jpg" alt="Территория дома" />
+            <img src="./css/img/land-two.jpg" alt="Территория дома" />
+            <img src="./css/img/land-one.jpg" alt="Территория дома" />
+            <img src="./css/img/land-two.jpg" alt="Территория дома" />
+            <img src="./css/img/land-one.jpg" alt="Территория дома" />
+            <img src="./css/img/land-two.jpg" alt="Территория дома" />
+            <img src="./css/img/land-one.jpg" alt="Территория дома" />
+            <img src="./css/img/land-two.jpg" alt="Территория дома" />
+          </div>
+          <div class="land__left">
+            <p class="land__left-bottom">
+              Усадьба расположена на первой линии живописного озера Ушкозера,
+              напротив дачи Б.Н.Ельцина по воде
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="where" class="where">
+        <div class="container">
+          <h2 class="title">Расположение</h2>
+          <ul class="list">
+            <li class="list__item">
+              1000 км
+              <p class="list__item-color">От Москвы</p>
+            </li>
+            <li class="list__item">
+              400 км
+              <p class="list__item-color">От Санкт-Петербурга</p>
+            </li>
+            <li class="list__item">
+              30 км
+              <p class="list__item-color">от Петрозаводска</p>
+            </li>
+            <li class="list__item">
+              10 км
+              <p class="list__item-color">Аэропорт Бесовец</p>
+            </li>
+          </ul>
+          <div class="where__distance distance">
+            <div class="distance__item distance__item-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 60 60"
+                fill="none"
+              >
+                <path
+                  d="M30 9C26.8174 9 23.7652 10.2337 21.5147 12.4297C19.2643 14.6256 18 17.604 18 20.7096C18 27.178 30 49 30 49C30 49 42 27.1795 42 20.7096C42 17.604 40.7357 14.6256 38.4853 12.4297C36.2348 10.2337 33.1826 9 30 9ZM30 26.3052C28.4791 26.3052 27.0206 25.7157 25.9452 24.6663C24.8698 23.6169 24.2656 22.1937 24.2656 20.7096C24.2656 19.2255 24.8698 17.8023 25.9452 16.7529C27.0206 15.7035 28.4791 15.114 30 15.114C31.5209 15.114 32.9794 15.7035 34.0548 16.7529C35.1302 17.8023 35.7344 19.2255 35.7344 20.7096C35.7344 22.1937 35.1302 23.6169 34.0548 24.6663C32.9794 25.7157 31.5209 26.3052 30 26.3052Z"
+                  stroke="#E6E6E6"
+                  stroke-width="3"
+                />
+              </svg>
+              Из Москвы
+            </div>
+            <div class="distance__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 47 47"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_310_783)">
+                  <path
+                    d="M38.8 11.9753C37.3334 10.0553 34.5438 9.68171 32.6238 11.1483L24.5674 17.3019C24.2537 17.5414 23.8285 17.5741 23.4819 17.3853L12.1804 11.2274L11.9353 11.087C11.5861 10.887 11.1511 10.9158 10.8313 11.1601L6.66648 14.3412C6.19283 14.703 6.13881 15.3962 6.55068 15.827L14.1976 23.8252C14.6094 24.256 14.5554 24.9492 14.0818 25.311L13.2413 25.9529C12.9763 26.1553 12.6279 26.2123 12.3122 26.1049L8.52702 24.8169L8.3209 24.7427C8.00132 24.6277 7.64521 24.6827 7.37529 24.8889L3.82694 27.5992C3.3222 27.9847 3.30007 28.737 3.78128 29.1515L4.19855 29.511L9.46825 34.131C9.56818 34.2186 9.64965 34.3253 9.70789 34.4447L12.7796 40.7454L13.0158 41.2411C13.2891 41.8146 14.0208 41.9912 14.5256 41.6056L18.0732 38.8959C18.3434 38.6895 18.4902 38.36 18.463 38.021L18.4454 37.8021L18.1983 33.8136C18.1777 33.4807 18.3244 33.1595 18.5894 32.957L19.4298 32.3151C19.9035 31.9534 20.5864 32.0836 20.8937 32.5943L26.5983 42.0761C26.9056 42.5868 27.5886 42.717 28.0622 42.3552L32.227 39.1741C32.5468 38.9298 32.689 38.5177 32.588 38.1282L32.517 37.8548L29.5505 25.3304C29.4595 24.9463 29.6029 24.5447 29.9166 24.3052L37.973 18.1516C39.893 16.685 40.2666 13.8954 38.8 11.9753ZM36.4656 13.7584C36.9702 14.419 36.8505 15.3125 36.1899 15.8171L26.6142 23.1312C26.2945 23.3754 26.1522 23.7876 26.2533 24.1771L26.3243 24.4505L29.2919 36.974C29.3829 37.358 29.2395 37.7597 28.9258 37.9992L28.9065 38.014C28.4329 38.3757 27.7499 38.2455 27.4427 37.7348L21.738 28.253C21.4307 27.7423 20.7478 27.6121 20.2741 27.9739L15.5417 31.5886C15.2706 31.7957 15.1237 32.1267 15.1522 32.4667L15.1702 32.6818L15.426 36.8858C15.4382 37.0863 15.3498 37.2797 15.1901 37.4017C14.8883 37.6322 14.4512 37.5297 14.2832 37.1891L12.0834 32.7275C12.0222 32.5498 11.9042 32.3958 11.7491 32.2898L8.02425 28.9947C7.73986 28.7431 7.75601 28.2945 8.05776 28.064C8.21743 27.942 8.42738 27.9076 8.61763 27.9723L12.6059 29.327L12.8083 29.4006C13.1285 29.517 13.4861 29.4623 13.7569 29.2554L18.4899 25.6403C18.9635 25.2785 19.0176 24.5854 18.6057 24.1546L10.9588 16.1563C10.5469 15.7255 10.601 15.0324 11.0746 14.6706L11.0939 14.6558C11.4076 14.4163 11.8328 14.3836 12.1794 14.5724L23.4809 20.7303L23.726 20.8707C24.0752 21.0707 24.5102 21.0419 24.83 20.7976L34.4068 13.4827C35.0675 12.9781 35.961 13.0977 36.4656 13.7584Z"
+                    fill="#858AB5"
+                  />
+                </g>
+              </svg>
+              1,5 часа
+            </div>
+            <div class="distance__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 46 45"
+                fill="none"
+              >
+                <path
+                  d="M32.8438 4.21875H13.1562C11.6644 4.21875 10.2337 4.81138 9.17877 5.86627C8.12388 6.92117 7.53125 8.35191 7.53125 9.84375V32.3438C7.53125 33.8356 8.12388 35.2663 9.17877 36.3212C10.2337 37.3761 11.6644 37.9688 13.1562 37.9688H14.5625L12.0312 41.3438C11.9204 41.4915 11.8398 41.6596 11.794 41.8385C11.7482 42.0174 11.738 42.2036 11.7641 42.3864C11.7903 42.5692 11.8521 42.7451 11.9462 42.904C12.0403 43.0629 12.1648 43.2017 12.3125 43.3125C12.4602 43.4233 12.6284 43.5039 12.8072 43.5498C12.9861 43.5956 13.1723 43.6057 13.3551 43.5796C13.5379 43.5535 13.7138 43.4916 13.8727 43.3975C14.0316 43.3035 14.1704 43.179 14.2813 43.0312L18.0781 37.9688H27.9219L31.7188 43.0312C31.9425 43.3296 32.2757 43.5269 32.6449 43.5796C33.0141 43.6324 33.3891 43.5363 33.6875 43.3125C33.9859 43.0887 34.1831 42.7556 34.2359 42.3864C34.2886 42.0172 34.1925 41.6421 33.9687 41.3438L31.4375 37.9688H32.8438C34.3356 37.9688 35.7663 37.3761 36.8212 36.3212C37.8761 35.2663 38.4688 33.8356 38.4688 32.3438V9.84375C38.4688 8.35191 37.8761 6.92117 36.8212 5.86627C35.7663 4.81138 34.3356 4.21875 32.8438 4.21875ZM10.3438 21.0938V14.0625H21.5938V21.0938H10.3438ZM24.4062 14.0625H35.6562V21.0938H24.4062V14.0625ZM13.1562 7.03125H32.8438C33.5897 7.03125 34.305 7.32757 34.8325 7.85501C35.3599 8.38246 35.6562 9.09783 35.6562 9.84375V11.25H10.3438V9.84375C10.3438 9.09783 10.6401 8.38246 11.1675 7.85501C11.695 7.32757 12.4103 7.03125 13.1562 7.03125ZM32.8438 35.1562H13.1562C12.4103 35.1562 11.695 34.8599 11.1675 34.3325C10.6401 33.805 10.3438 33.0897 10.3438 32.3438V23.9062H35.6562V32.3438C35.6562 33.0897 35.3599 33.805 34.8325 34.3325C34.305 34.8599 33.5897 35.1562 32.8438 35.1562ZM17.375 30.2344C17.375 30.6516 17.2513 31.0594 17.0195 31.4063C16.7877 31.7532 16.4583 32.0235 16.0728 32.1832C15.6874 32.3428 15.2633 32.3846 14.8541 32.3032C14.4449 32.2218 14.0691 32.0209 13.7741 31.7259C13.4791 31.4309 13.2782 31.0551 13.1968 30.6459C13.1154 30.2367 13.1572 29.8126 13.3168 29.4272C13.4765 29.0417 13.7468 28.7123 14.0937 28.4805C14.4406 28.2487 14.8484 28.125 15.2656 28.125C15.8251 28.125 16.3616 28.3472 16.7572 28.7428C17.1528 29.1384 17.375 29.6749 17.375 30.2344ZM32.8438 30.2344C32.8438 30.6516 32.72 31.0594 32.4883 31.4063C32.2565 31.7532 31.927 32.0235 31.5416 32.1832C31.1562 32.3428 30.732 32.3846 30.3229 32.3032C29.9137 32.2218 29.5378 32.0209 29.2428 31.7259C28.9478 31.4309 28.7469 31.0551 28.6655 30.6459C28.5841 30.2367 28.6259 29.8126 28.7856 29.4272C28.9452 29.0417 29.2156 28.7123 29.5625 28.4805C29.9094 28.2487 30.3172 28.125 30.7344 28.125C31.2938 28.125 31.8303 28.3472 32.2259 28.7428C32.6215 29.1384 32.8438 29.6749 32.8438 30.2344Z"
+                  fill="#858AB5"
+                />
+              </svg>
+              8 часов
+            </div>
+          </div>
+        </div>
+        <img src="./css/img/map.jpg" alt="Карта" class="where__map" />
+      </section>
+      <section class="formBottom">
+        <p class="formBottom__text">estate in KareliaHOUSE</p>
+        <form action="" class="formBottom__form getAnswer">
+          <h2 class="getAnswer__title">
+            Приватная усадьба в Карелии к Вашим услугам
+          </h2>
+          <p class="getAnswer__desc">
+            Мы доступны 24/7 и готовы ответить на интересующие Вас вопросы
+          </p>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="getAnswer__input"
+            placeholder="Ваше имя"
+          />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            class="getAnswer__input"
+            placeholder="Телефон"
+          />
+          <p class="getAnswer__policy">
+            Нажимая на кнопку вы соглашаетесь с политикой обработки данных
+          </p>
+          <button type="submit" class="btn getAnswer__btn">
+            Получить ответ
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__left">
+          <p class="footer__title">estate in Karelia</p>
+          <p class="footer__desc">
+            Приватность, природа и комфорт на высшем уровне
+          </p>
+        </div>
+        <div class="footer__middle">
+          <div class="submenu__contacts">
+            <a href="tel:+79194841786" class="header__tel">+7 919 48 41 786</a>
+            <a href="mailto:EstateinKarelia@gmail.com"
+              >EstateinKarelia@gmail.com</a
+            >
+          </div>
+          <p class="footer__year">2024</p>
+        </div>
+        <nav class="menu">
           <ul class="menuList">
             <li class="menuList__item">
-              <a href="#house">Основной дом</a>
+              <a href="#master">Основной дом</a>
             </li>
             <li class="menuList__item">
               <a href="#spa">Спа-комплекс</a>
             </li>
             <li class="menuList__item">
-              <a href="#near">Природа</a>
+              <a href="#nature">Природа</a>
             </li>
             <li class="menuList__item">
               <a href="#guestHouse">Гостевой дом</a>
@@ -45,562 +695,15 @@
             </li>
           </ul>
         </nav>
-        <div class="submenu__letter">
-          <span class="submenu__letter-size">Е</span>
-          <div class="circle circle-header">
-          </div>
-        </div>
-        <div class="submenu__text">
-          <div class="submenu__contacts">
-            <a href="tel:+79194841786" class="header__tel">+7 919 48 41 786</a>
-            <a href="mailto:EstateinKarelia@gmail.com">EstateinKarelia@gmail.com</a>
-          </div>
-          <p class="submenu__title">estate in Karelia</p>
-        </div>
       </div>
-    </div>
-  </header>
-  <main class="main">
-    <div class="color"></div>
-    <div class="effect"></div>
-    <section class="mainScreen">
-      <div class="container">
-        <p class="mainScreen__desc">
-          Уютная усадьба в атмосфере первозданной природы, укрытая природой от
-          окружения
-        </p>
-        <div class="mainScreen__text">
-          <h1 class="mainScreen__title">
-            Усадьба
-            <div class="mainScreen__title-letter">
-              в
-              <div class="circle circle-main">
-              </div>
-            </div>
-            Карелии
-          </h1>
-        </div>
-      </div>
-    </section>
-    <section class="form">
-      <div class="container">
-        <h3 class="form__title">Арендовать</h3>
-        <form action="" class="rent-form">
-          <input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя" />
-          <input type="tel" name="tel" id="tel" class="form__input" placeholder="Телефон" />
-          <button type="submit" class="btn">Отправить</button>
-        </form>
-      </div>
-    </section>
-    <section class="foryou">
-      <div class="tree tree-main"></div>
-      <div class="tree tree-copy"></div>
-      <div class="container">
-        <ul class="list">
-          <li class="list__item">
-            0,5 га
-            <p class="list__item-color">Площадь усадьбы</p>
-          </li>
-          <li class="list__item">
-            0,25 га
-            <p class="list__item-color">собственнй берег</p>
-          </li>
-          <li class="list__item">
-            200 м<sup class="st">2</sup>
-            <p class="list__item-color">Mastar House</p>
-          </li>
-          <li class="list__item">
-            150 м<sup class="st">2</sup>
-            <p class="list__item-color">Guest House</p>
-          </li>
-          <li class="list__item">
-            230 м<sup class="st">2</sup>
-            <p class="list__item-color">Spa house</p>
-          </li>
-        </ul>
-        <h2 class="title foryou__title">В вашем распоряжении</h2>
-        <div class="circle circle-foryou">
-        </div>
-      </div>
-    </section>
-    <section class="reels">
-      <div class="effect-reels"></div>
-      <div class="container">
-        <h2 class="title">Reels</h2>
-        <div class="slider slider-reels">
-          <img src="./css/img/reels.jpg" alt="Reels" />
-          <img src="./css/img/reels.jpg" alt="Reels" />
-          <img src="./css/img/reels.jpg" alt="Reels" />
-          <img src="./css/img/reels.jpg" alt="Reels" />
-          <img src="./css/img/reels.jpg" alt="Reels" />
-          <img src="./css/img/reels.jpg" alt="Reels" />
-        </div>
-        <div class="slider__num">
-          <span class="slider__num-start">01</span> / <span class="slider__num-all"></span>
-        </div>
-        <div class="circle circle-reels"></div>
-      </div>
-    </section>
-    <section id="master" class="master">
-      <div class="master__top container">
-        <div class="master__aboutHouse">
-          <h2 class="title">Master house</h2>
-          <p class="master__aboutHouse-text">
-            Основной дом из рубленного бревна (толстомер), площадью 200 м<sup class="st">2</sup> с
-            видовой террасой В доме реализован уникальный дизайн проект в
-            стиле фьюжн.
-          </p>
-        </div>
-        <div class="master__floor">
-          <div class="master__floor__one">
-            <h5 class="master__floor-title">1 этаж</h5>
-            <ul class="master__floor-list">
-              <li>Веранда</li>
-              <li>Прихожая</li>
-              <li>Гостиная-столовая</li>
-              <li>Кухня</li>
-              <li>Кабинет</li>
-              <li>Санузел душем</li>
-            </ul>
-          </div>
-          <div class="master__floor__two">
-            <h5 class="master__floor-title">2 этаж</h5>
-            <ul class="master__floor-list">
-              <li>Мастер спальня с душем</li>
-              <li>2 спальни с балконом</li>
-              <li>Санузел и постирочная</li>
-              <li>Видовая оранжерея</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="master__middle">
-        <img src="./css/img/master-one.jpg" alt="Master House" />
-        <div class="master__imgBlock">
-          <img src="./css/img/master-three.jpg" alt="Master House" />
-          <p>Премиальный камин Tulikivi.</p>
-          <div class="circle circle-master-bottom">
-          </div>
-        </div>
-        <div class="master__square-brown">
-          <p class="master__square-letter">М</p>
-          <div class="circle circle-master">
-          </div>
-        </div>
-        <img src="./css/img/master-two.jpg" alt="Master House" class="master__middle-imgTop" />
-      </div>
-      <div class="master__bottom">
-        <p class="master__text-one title-thebiggest">Master house</p>
-        <div class="container">
-          <div class="master__imgBlock">
-            <img src="./css/img/master-four.jpg" alt="Master house" />
-            <p>
-              Видовая оранжерея на стеклянном полу с сохранением эффекта
-              второго света
-            </p>
-          </div>
-          <div class="master__imgBlock">
-            <img src="./css/img/master-five.jpg" alt="Master house" />
-            <p>
-              Дом оснащен современной техникой и изысканной мебелью известных
-              брендов
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="master__slider">
-        <div class="container container-one">
-          <p class="master__text-two title-thebiggest">M</p>
-        </div>
-        <div class="slider slider-master">
-          <div class="master__sliderBlock"> <img src="./css/img/master-slider-one.jpg" alt="Master house" />
-            <p class="master__lastText-text">
-              уютная усадьба в атмосфере первозданной природы, укрытая
-              природой от окружения.</p>
-          </div>
-          <div class="master__sliderBlock"> <img src="./css/img/master-slider-three.jpg" alt="Master house" />
-            <p class="master__lastText-text">
-              уютная усадьба в атмосфере первозданной природы, укрытая
-              природой от окружения.
-            </p>
-          </div>
-          <div class="master__sliderBlock"> <img src="./css/img/master-slider-two.jpg" alt="Master house" />
-            <p class="master__lastText-text">
-              уютная усадьба в атмосфере первозданной природы, укрытая
-              природой от окружения.
-            </p>
-          </div>
-          <div class="master__sliderBlock"> <img src="./css/img/master-slider-one.jpg" alt="Master house" />
-            <p class="master__lastText-text">
-              уютная усадьба в атмосфере первозданной природы, укрытая
-              природой от окружения.
-            </p>
-          </div>
-          <div class="master__sliderBlock"> <img src="./css/img/master-slider-three.jpg" alt="Master house" />
-            <p class="master__lastText-text">
-              уютная усадьба в атмосфере первозданной природы, укрытая
-              природой от окружения.
-            </p>
-          </div>
-          <div class="master__sliderBlock"> <img src="./css/img/master-slider-two.jpg" alt="Master house" />
-            <p class="master__lastText-text">
-              уютная усадьба в атмосфере первозданной природы, укрытая
-              природой от окружения.
-            </p>
-          </div>
-        </div>
-        <div class="container master__lastText">
-          <p class="master__lastText-orange">Private lounge space</p>
-          <div class="slider__num">
-            <span class="slider__num-start">01</span> / <span class="slider__num-all"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="spa" class="spa">
-      <div class="spa-color"></div>
-      <div class="spa__tree"></div>
-      <div class="container">
-        <div class="spa__info spaInfo">
-          <h2 class="spaInfo__title">SPA HOUSE</h2>
-          <p class="spaInfo__desc">
-            Краткое описание спа комплекса. Особенное место сосредоточение
-            всего наилучшего
-          </p>
-          <div class="spaInfo__in inSpa">
-            <p class="inSpa__title">2 этажа элитного отдыха</p>
-            <ul class="inSpa__list">
-              <li>Круговая терасса</li>
-              <li>Джакузи с выходом к озеру</li>
-              <li>Баня на дровах</li>
-              <li>Соляная пещера</li>
-              <li>Мастер спальня</li>
-              <li>Библиотека</li>
-              <li>Бильярд</li>
-              <li>Хамам</li>
-            </ul>
-            <div class="circle circle-spa">
-            </div>
-          </div>
-          <div class="spa__photo spaPhoto">
-            <p class="spaPhoto__big title-thebiggest">SPA HOUSE</p>
-            <div class="spaPhoto__imgBlock">
-              <img src="./css/img/spa-one.jpg" alt="Spa house" />
-              <p>Открытая джакузи</p>
-            </div>
-            <div class="spaPhoto__imgBlock">
-              <img src="./css/img/spa-two.jpg" alt="Spa house" />
-              <p>Описание душа</p>
-            </div>
-            <div class="spaPhoto__imgBlock">
-              <img src="./css/img/spa-three.jpg" alt="Spa house" />
-              <p>12 футовый элитный стол</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider slider-spa">
-          <div class="master__sliderBlock"> <img src="./css/img/spa-slider-one.jpg" alt="Spa house" />
-            <p class="master__lastText-text">
-              Описание хамама
-          </div>
-          <div class="master__sliderBlock"> <img src="./css/img/spa-slider-two.jpg" alt="Spa house" />
-            <p class="master__lastText-text">
-              Описание хамама
-            </p>
-          </div>
-          <div class="master__sliderBlock"> <img src="./css/img/master-slider-two.jpg" alt="Spa house" />
-            <p class="master__lastText-text">
-              Описание хамама
-            </p>
-          </div>
-          <div class="master__sliderBlock"> <img src="./css/img/spa-slider-one.jpg" alt="Spa house" />
-            <p class="master__lastText-text">
-              Описание хамама
-          </div>
-          <div class="master__sliderBlock"> <img src="./css/img/master-slider-two.jpg" alt="Spa house" />
-            <p class="master__lastText-text">
-              Описание хамама
-            </p>
-          </div>
-        </div>
-        <div class="container master__lastText">
-          <p class="master__lastText-orange">Private lounge space</p>
-          <div class="slider__num">
-            <span class="slider__num-start">01</span> / <span class="slider__num-all"></span>
-          </div>
-        </div>
-    </section>
-    <section id="nature" class="nature">
-      <div class="lake">
-        <img src="./css/img/lake.jpg" alt="Край озер" class="lake__img" />
-        <div class="container">
-          <h2 class="lake__title title-big">Край озер</h2>
-          <div class="lake__text">
-            <p class="lake__text-left">
-              Уникальный по своей природе, культуре и истории регион России,
-              который имеет самую протяженную границу с Европейским союзом, на
-              Северо-Востоке омывается Белым морем.
-            </p>
-            <p class="lake__text-right">
-              Славится красивой разнообразной природой. Это экологически
-              чистый край, покрытый хвойными лесами, озерами, реками и
-              скалами. Более 25 % территории занимает водная поверхность – в
-              республике насчитывается около 27 000 рек и около 60 000 озёр, в
-              том числе крупнейшие озёра Европы – Ладожское и Онежское
-            </p>
-          </div>
-          <div class="slider slider-lake">
-            <img src="./css/img/lake-one.jpg" alt="Край озер" />
-            <img src="./css/img/lake-two.jpg" alt="Территория дома" />
-            <img src="./css/img/lake-three.jpg" alt="Край озер" />
-            <img src="./css/img/lake-one.jpg" alt="Край озер" />
-            <img src="./css/img/lake-two.jpg" alt="Край озер" />
-            <img src="./css/img/lake-three.jpg" alt="Край озер" />
-            <img src="./css/img/lake-one.jpg" alt="Край озер" />
-            <img src="./css/img/lake-two.jpg" alt="Край озер" />
-            <img src="./css/img/lake-three.jpg" alt="Край озер" />
-          </div>
-          <div class="slider__num">
-            <span class="slider__num-start">01</span> / <span class="slider__num-all"></span>
-          </div>
-        </div>
-      </div>
-      <div class="near">
-        <div class="near-square"></div>
-        <div class="container">
-          <h2 class="near__top title-big">Рядом</h2>
-          <div class="near__middle slider slider-near">
-            <div>
-              <div class="slider-near__img"> <img src="./css/img/near-one.jpg" alt="Территория дома" />
-                <img src="./css/img/near-two.jpg" alt="Территория дома" />
-              </div>
-              <div class="slider-near__text">
-                <h3 class="title">Заповедник КИВАЧ</h3>
-                <p>
-                  Всё для того, чтобы можно было как следует помыться, все гости
-                  усадьбы будут самыми чистыми как никогда прежде
-                </p>
-              </div>
-            </div>
-            <div>
-              <div class="slider-near__img"> <img src="./css/img/near-one.jpg" alt="Территория дома" />
-                <img src="./css/img/near-two.jpg" alt="Территория дома" />
-              </div>
-              <div class="slider-near__text">
-                <h3 class="title">Заповедник КИВАЧ</h3>
-                <p>
-                  Всё для того, чтобы можно было как следует помыться, все гости
-                  усадьбы будут самыми чистыми как никогда прежде
-                </p>
-              </div>
-            </div>
-            <div>
-              <div class="slider-near__img"> <img src="./css/img/near-one.jpg" alt="Территория дома" />
-                <img src="./css/img/near-two.jpg" alt="Территория дома" />
-              </div>
-              <div class="slider-near__text">
-                <h3 class="title">Заповедник КИВАЧ</h3>
-                <p>
-                  Всё для того, чтобы можно было как следует помыться, все гости
-                  усадьбы будут самыми чистыми как никогда прежде
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="slider__num">
-            <span class="slider__num-start">01</span> / <span class="slider__num-all"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="guestHouse" class="guestHouse">
-      <div class="container">
-        <div class="guestHouse__left">
-          <h2 class="title">Guest house</h2>
-          <div class="guestHouse__text">
-            <p class="guestHouse__text-big">2а</p>
-            <p>
-              Комфортабельных номера со всеми удобствами и отдельными
-              санузлами
-            </p>
-          </div>
-        </div>
-
-        <div class="slidersContainer">
-          <div class="slider-guest-one">
-            <img src="./css/img/guest-one.jpg" alt="Гостевой дом" />
-            <img src="./css/img/guest-two.jpg" alt="Гостевой дом" />
-            <img src="./css/img/guest-three.jpg" alt="Гостевой дом" />
-            <img src="./css/img/guest-two.jpg" alt="Гостевой дом" />
-          </div>
-          <div class="guestHouse__right slider slider-guest-all">
-            <img src="./css/img/guest-two.jpg" alt="Гостевой дом" />
-            <img src="./css/img/guest-three.jpg" alt="Гостевой дом" />
-            <img src="./css/img/guest-two.jpg" alt="Гостевой дом" />
-            <img src="./css/img/guest-one.jpg" alt="Гостевой дом" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="land" class="land">
-      <div class="container">
-        <div class="land__top">
-          <h2 class="title">НА территории</h2>
-          <div class="land__top-width">
-            <div class="circle circle-land">
-            </div>
-            <ul class="land__list">
-              <li>Гриль домик</li>
-              <li>Уличные тренажеры</li>
-              <li>Эллинг с видовой терассой</li>
-              <li>Гараж</li>
-            </ul>
-          </div>
-        </div>
-        <div class="land__bottom slider slider-where">
-          <img src="./css/img/land-one.jpg" alt="Территория дома" />
-          <img src="./css/img/land-two.jpg" alt="Территория дома" />
-          <img src="./css/img/land-one.jpg" alt="Территория дома" />
-          <img src="./css/img/land-two.jpg" alt="Территория дома" />
-          <img src="./css/img/land-one.jpg" alt="Территория дома" />
-          <img src="./css/img/land-two.jpg" alt="Территория дома" />
-          <img src="./css/img/land-one.jpg" alt="Территория дома" />
-          <img src="./css/img/land-two.jpg" alt="Территория дома" />
-        </div>
-        <div class="land__left">
-          <p class="land__left-bottom">
-            Усадьба расположена на первой линии живописного озера Ушкозера,
-            напротив дачи Б.Н.Ельцина по воде
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="where" class="where">
-      <div class="container">
-        <h2 class="title">Расположение</h2>
-        <ul class="list">
-          <li class="list__item">
-            1000 км
-            <p class="list__item-color">От Москвы</p>
-          </li>
-          <li class="list__item">
-            400 км
-            <p class="list__item-color">От Санкт-Петербурга</p>
-          </li>
-          <li class="list__item">
-            30 км
-            <p class="list__item-color">от Петрозаводска</p>
-          </li>
-          <li class="list__item">
-            10 км
-            <p class="list__item-color">Аэропорт Бесовец</p>
-          </li>
-        </ul>
-        <div class="where__distance distance">
-          <div class="distance__item distance__item-bg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
-              <path
-                d="M30 9C26.8174 9 23.7652 10.2337 21.5147 12.4297C19.2643 14.6256 18 17.604 18 20.7096C18 27.178 30 49 30 49C30 49 42 27.1795 42 20.7096C42 17.604 40.7357 14.6256 38.4853 12.4297C36.2348 10.2337 33.1826 9 30 9ZM30 26.3052C28.4791 26.3052 27.0206 25.7157 25.9452 24.6663C24.8698 23.6169 24.2656 22.1937 24.2656 20.7096C24.2656 19.2255 24.8698 17.8023 25.9452 16.7529C27.0206 15.7035 28.4791 15.114 30 15.114C31.5209 15.114 32.9794 15.7035 34.0548 16.7529C35.1302 17.8023 35.7344 19.2255 35.7344 20.7096C35.7344 22.1937 35.1302 23.6169 34.0548 24.6663C32.9794 25.7157 31.5209 26.3052 30 26.3052Z"
-                stroke="#E6E6E6" stroke-width="3" />
-            </svg>
-            Из Москвы
-          </div>
-          <div class="distance__item"></div>
-          <div class="distance__item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47" fill="none">
-              <g clip-path="url(#clip0_310_783)">
-                <path
-                  d="M38.8 11.9753C37.3334 10.0553 34.5438 9.68171 32.6238 11.1483L24.5674 17.3019C24.2537 17.5414 23.8285 17.5741 23.4819 17.3853L12.1804 11.2274L11.9353 11.087C11.5861 10.887 11.1511 10.9158 10.8313 11.1601L6.66648 14.3412C6.19283 14.703 6.13881 15.3962 6.55068 15.827L14.1976 23.8252C14.6094 24.256 14.5554 24.9492 14.0818 25.311L13.2413 25.9529C12.9763 26.1553 12.6279 26.2123 12.3122 26.1049L8.52702 24.8169L8.3209 24.7427C8.00132 24.6277 7.64521 24.6827 7.37529 24.8889L3.82694 27.5992C3.3222 27.9847 3.30007 28.737 3.78128 29.1515L4.19855 29.511L9.46825 34.131C9.56818 34.2186 9.64965 34.3253 9.70789 34.4447L12.7796 40.7454L13.0158 41.2411C13.2891 41.8146 14.0208 41.9912 14.5256 41.6056L18.0732 38.8959C18.3434 38.6895 18.4902 38.36 18.463 38.021L18.4454 37.8021L18.1983 33.8136C18.1777 33.4807 18.3244 33.1595 18.5894 32.957L19.4298 32.3151C19.9035 31.9534 20.5864 32.0836 20.8937 32.5943L26.5983 42.0761C26.9056 42.5868 27.5886 42.717 28.0622 42.3552L32.227 39.1741C32.5468 38.9298 32.689 38.5177 32.588 38.1282L32.517 37.8548L29.5505 25.3304C29.4595 24.9463 29.6029 24.5447 29.9166 24.3052L37.973 18.1516C39.893 16.685 40.2666 13.8954 38.8 11.9753ZM36.4656 13.7584C36.9702 14.419 36.8505 15.3125 36.1899 15.8171L26.6142 23.1312C26.2945 23.3754 26.1522 23.7876 26.2533 24.1771L26.3243 24.4505L29.2919 36.974C29.3829 37.358 29.2395 37.7597 28.9258 37.9992L28.9065 38.014C28.4329 38.3757 27.7499 38.2455 27.4427 37.7348L21.738 28.253C21.4307 27.7423 20.7478 27.6121 20.2741 27.9739L15.5417 31.5886C15.2706 31.7957 15.1237 32.1267 15.1522 32.4667L15.1702 32.6818L15.426 36.8858C15.4382 37.0863 15.3498 37.2797 15.1901 37.4017C14.8883 37.6322 14.4512 37.5297 14.2832 37.1891L12.0834 32.7275C12.0222 32.5498 11.9042 32.3958 11.7491 32.2898L8.02425 28.9947C7.73986 28.7431 7.75601 28.2945 8.05776 28.064C8.21743 27.942 8.42738 27.9076 8.61763 27.9723L12.6059 29.327L12.8083 29.4006C13.1285 29.517 13.4861 29.4623 13.7569 29.2554L18.4899 25.6403C18.9635 25.2785 19.0176 24.5854 18.6057 24.1546L10.9588 16.1563C10.5469 15.7255 10.601 15.0324 11.0746 14.6706L11.0939 14.6558C11.4076 14.4163 11.8328 14.3836 12.1794 14.5724L23.4809 20.7303L23.726 20.8707C24.0752 21.0707 24.5102 21.0419 24.83 20.7976L34.4068 13.4827C35.0675 12.9781 35.961 13.0977 36.4656 13.7584Z"
-                  fill="#858AB5" />
-              </g>
-            </svg>
-            1,5 часа
-          </div>
-          <div class="distance__item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 45" fill="none">
-              <path
-                d="M32.8438 4.21875H13.1562C11.6644 4.21875 10.2337 4.81138 9.17877 5.86627C8.12388 6.92117 7.53125 8.35191 7.53125 9.84375V32.3438C7.53125 33.8356 8.12388 35.2663 9.17877 36.3212C10.2337 37.3761 11.6644 37.9688 13.1562 37.9688H14.5625L12.0312 41.3438C11.9204 41.4915 11.8398 41.6596 11.794 41.8385C11.7482 42.0174 11.738 42.2036 11.7641 42.3864C11.7903 42.5692 11.8521 42.7451 11.9462 42.904C12.0403 43.0629 12.1648 43.2017 12.3125 43.3125C12.4602 43.4233 12.6284 43.5039 12.8072 43.5498C12.9861 43.5956 13.1723 43.6057 13.3551 43.5796C13.5379 43.5535 13.7138 43.4916 13.8727 43.3975C14.0316 43.3035 14.1704 43.179 14.2813 43.0312L18.0781 37.9688H27.9219L31.7188 43.0312C31.9425 43.3296 32.2757 43.5269 32.6449 43.5796C33.0141 43.6324 33.3891 43.5363 33.6875 43.3125C33.9859 43.0887 34.1831 42.7556 34.2359 42.3864C34.2886 42.0172 34.1925 41.6421 33.9687 41.3438L31.4375 37.9688H32.8438C34.3356 37.9688 35.7663 37.3761 36.8212 36.3212C37.8761 35.2663 38.4688 33.8356 38.4688 32.3438V9.84375C38.4688 8.35191 37.8761 6.92117 36.8212 5.86627C35.7663 4.81138 34.3356 4.21875 32.8438 4.21875ZM10.3438 21.0938V14.0625H21.5938V21.0938H10.3438ZM24.4062 14.0625H35.6562V21.0938H24.4062V14.0625ZM13.1562 7.03125H32.8438C33.5897 7.03125 34.305 7.32757 34.8325 7.85501C35.3599 8.38246 35.6562 9.09783 35.6562 9.84375V11.25H10.3438V9.84375C10.3438 9.09783 10.6401 8.38246 11.1675 7.85501C11.695 7.32757 12.4103 7.03125 13.1562 7.03125ZM32.8438 35.1562H13.1562C12.4103 35.1562 11.695 34.8599 11.1675 34.3325C10.6401 33.805 10.3438 33.0897 10.3438 32.3438V23.9062H35.6562V32.3438C35.6562 33.0897 35.3599 33.805 34.8325 34.3325C34.305 34.8599 33.5897 35.1562 32.8438 35.1562ZM17.375 30.2344C17.375 30.6516 17.2513 31.0594 17.0195 31.4063C16.7877 31.7532 16.4583 32.0235 16.0728 32.1832C15.6874 32.3428 15.2633 32.3846 14.8541 32.3032C14.4449 32.2218 14.0691 32.0209 13.7741 31.7259C13.4791 31.4309 13.2782 31.0551 13.1968 30.6459C13.1154 30.2367 13.1572 29.8126 13.3168 29.4272C13.4765 29.0417 13.7468 28.7123 14.0937 28.4805C14.4406 28.2487 14.8484 28.125 15.2656 28.125C15.8251 28.125 16.3616 28.3472 16.7572 28.7428C17.1528 29.1384 17.375 29.6749 17.375 30.2344ZM32.8438 30.2344C32.8438 30.6516 32.72 31.0594 32.4883 31.4063C32.2565 31.7532 31.927 32.0235 31.5416 32.1832C31.1562 32.3428 30.732 32.3846 30.3229 32.3032C29.9137 32.2218 29.5378 32.0209 29.2428 31.7259C28.9478 31.4309 28.7469 31.0551 28.6655 30.6459C28.5841 30.2367 28.6259 29.8126 28.7856 29.4272C28.9452 29.0417 29.2156 28.7123 29.5625 28.4805C29.9094 28.2487 30.3172 28.125 30.7344 28.125C31.2938 28.125 31.8303 28.3472 32.2259 28.7428C32.6215 29.1384 32.8438 29.6749 32.8438 30.2344Z"
-                fill="#858AB5" />
-            </svg>
-            8 часов
-          </div>
-        </div>
-      </div>
-      <img src="./css/img/map.jpg" alt="Карта" class="where__map" />
-    </section>
-    <section class="formBottom">
-      <p class="formBottom__text">estate in KareliaHOUSE</p>
-      <form action="" class="formBottom__form getAnswer">
-        <h2 class="getAnswer__title">
-          Приватная усадьба в Карелии к Вашим услугам
-        </h2>
-        <p class="getAnswer__desc">
-          Мы доступны 24/7 и готовы ответить на интересующие Вас вопросы
-        </p>
-        <input type="text" name="name" id="name" class="getAnswer__input" placeholder="Ваше имя" />
-        <input type="tel" name="tel" id="tel" class="getAnswer__input" placeholder="Телефон" />
-        <p class="getAnswer__policy">
-          Нажимая на кнопку вы соглашаетесь с политикой обработки данных
-        </p>
-        <button type="submit" class="btn getAnswer__btn">
-          Получить ответ
-        </button>
-      </form>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__left">
-        <p class="footer__title">estate in Karelia</p>
-        <p class="footer__desc">
-          Приватность, природа и комфорт на высшем уровне
-        </p>
-      </div>
-      <div class="footer__middle">
-        <div class="submenu__contacts">
-          <a href="tel:+79194841786" class="header__tel">+7 919 48 41 786</a>
-          <a href="mailto:EstateinKarelia@gmail.com">EstateinKarelia@gmail.com</a>
-        </div>
-        <p class="footer__year">2024</p>
-      </div>
-      <nav class="menu">
-        <ul class="menuList">
-          <li class="menuList__item">
-            <a href="#house">Основной дом</a>
-          </li>
-          <li class="menuList__item">
-            <a href="#spa">Спа-комплекс</a>
-          </li>
-          <li class="menuList__item">
-            <a href="#near">Природа</a>
-          </li>
-          <li class="menuList__item">
-            <a href="#guestHouse">Гостевой дом</a>
-          </li>
-          <li class="menuList__item">
-            <a href="#land">Територия</a>
-          </li>
-          <li class="menuList__item">
-            <a href="#where">Расположение</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
-  <div class="lines">
-    <div class="line line-one"></div>
-    <div class="line line-two"></div>
-    <div class="line line-three"></div>
-    <div class="line line-four"></div>
-    <div class="line line-five"></div>
-    <div class="line line-six"></div>
-    <div class="line line-seven"></div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/script.js"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

@@ -75,6 +75,7 @@
 }
 .slick-slide img {
   display: inline-block;
+  object-fit: cover;
 }
 .slick-slide.slick-loading img {
   display: none;

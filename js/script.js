@@ -122,10 +122,20 @@ $(".slider-master").slick({
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="master-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
   responsive: [
     {
+      breakpoint: 1369,
+      settings: {
+        touchThreshold: 15,
+        swipe: true,
+        arrows: false,
+      },
+    },
+    {
       breakpoint: 768,
       settings: {
         touchThreshold: 15,
         swipe: true,
+        slidesToShow: 1,
+        centerMode: false,
         arrows: false,
       },
     },
@@ -155,16 +165,26 @@ $(".slider-spa").slick({
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="spa-arrow slider__arrow-left"><path d="M0 17L28.5 0.545517L28.5 33.4545L0 17Z"></path></svg>',
   nextArrow:
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 34" fill="none" class="spa-arrow slider__arrow-right"><path d="M29 17L0.5 0.545517L0.5 33.4545L29 17Z"></path></svg>',
-  responsive: [
-    {
-      breakpoint: 1366,
-      settings: {
-        touchThreshold: 15,
-        swipe: true,
-        arrows: false,
+    responsive: [
+      {
+        breakpoint: 1369,
+        settings: {
+          touchThreshold: 15,
+          swipe: true,
+          arrows: false,
+        },
       },
-    },
-  ],
+      {
+        breakpoint: 768,
+        settings: {
+          touchThreshold: 15,
+          swipe: true,
+          slidesToShow: 1,
+          centerMode: false,
+          arrows: false,
+        },
+      },
+    ],
 });
 
 const allSpa = $(".slider-spa").slick("getSlick").slideCount;
