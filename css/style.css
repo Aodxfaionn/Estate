@@ -933,7 +933,7 @@ a:hover::before {
 .spa {
   position: relative;
   margin-bottom: 315px;
-  background: url("/css/img/spa-bg.jpg");
+  background: url("./img/spa-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2621,8 +2621,11 @@ a:hover::before {
     width: 768px;
     left: 2px;
   }
+  .slider-spa {
+    left: -39px;
+  }
   .slider-spa .slick-list {
-    left: -148px;
+    left: 0;
   }
   .master__lastText-orange {
     display: none;
@@ -2690,7 +2693,9 @@ a:hover::before {
     width: 100%;
   }
   .spaPhoto__imgBlock:first-of-type img,
-  .spaPhoto__imgBlock img, .spaPhoto__imgBlock:nth-of-type(2) img, .spaPhoto__imgBlock:last-of-type img {
+  .spaPhoto__imgBlock img,
+  .spaPhoto__imgBlock:nth-of-type(2) img,
+  .spaPhoto__imgBlock:last-of-type img {
     width: 70%;
     object-fit: cover;
     height: 450px;
@@ -3183,7 +3188,8 @@ a:hover::before {
     gap: 0;
     margin-bottom: 100px;
   }
-  .master__bottom .master__imgBlock:first-of-type img, .master__bottom .master__imgBlock:last-of-type img {
+  .master__bottom .master__imgBlock:first-of-type img,
+  .master__bottom .master__imgBlock:last-of-type img {
     height: 350px;
   }
   .master__text-one {
@@ -3193,7 +3199,8 @@ a:hover::before {
   .master__bottom {
     margin-bottom: 0;
   }
-  .title-thebiggest, .circle.circle-master-bottom {
+  .title-thebiggest,
+  .circle.circle-master-bottom {
     display: none;
   }
   .slider-master img,
@@ -3202,18 +3209,13 @@ a:hover::before {
     height: 400px;
     opacity: 1;
   }
-  .master__text-two,  .master__lastText-text, .slider-master + .master__lastText {
+  .master__text-two,
+  .master__lastText-text,
+  .slider-master + .master__lastText {
     display: none;
   }
   .slider-master {
     height: auto;
-  }
-  .slider-master .slick-list,
-  .slider-spa .slick-list {
-    width: 398px;
-  }
-  .slider-master .slick-list {
-    left: -3px;
   }
   .master {
     margin-bottom: 460px;
@@ -3241,7 +3243,10 @@ a:hover::before {
     margin-top: 600px;
     margin-bottom: 150px;
   }
-  .spaPhoto__imgBlock:first-of-type img, .spaPhoto__imgBlock img, .spaPhoto__imgBlock:nth-of-type(2) img, .spaPhoto__imgBlock:last-of-type img {
+  .spaPhoto__imgBlock:first-of-type img,
+  .spaPhoto__imgBlock img,
+  .spaPhoto__imgBlock:nth-of-type(2) img,
+  .spaPhoto__imgBlock:last-of-type img {
     height: 350px;
   }
   .spaPhoto__imgBlock:nth-of-type(2) {
